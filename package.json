@@ -1,0 +1,43 @@
+{
+  "name": "ralph-wiggum-mcp",
+  "version": "2.0.0",
+  "description": "Enhanced MCP server implementing the Ralph Wiggum technique with history tracking, git integration, and external tools",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ralph-wiggum-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:security": "jest src/security.test.ts",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ralph-wiggum",
+    "iterative-development",
+    "ai-agents",
+    "git-integration",
+    "test-automation",
+    "progress-tracking"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.10.5",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

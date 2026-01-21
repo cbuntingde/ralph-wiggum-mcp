@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ralph-wiggum": {
+      "command": "node",
+      "args": [
+        "C:/chris-apps/REMOVED-plugins/ralph-wiggum-mcp/dist/index.js"
+      ]
+    }
+  }
+}
