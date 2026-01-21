@@ -1,6 +1,6 @@
 {
   "name": "ralph-wiggum-mcp",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Enhanced MCP server implementing the Ralph Wiggum technique with history tracking, git integration, and external tools",
   "type": "module",
   "main": "dist/index.js",
@@ -25,8 +25,21 @@
     "test-automation",
     "progress-tracking"
   ],
-  "author": "",
+  "author": "Chris Bunting <cbuntingde@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbuntingde/ralph-wiggum-mcp.git"
+  },
+  "homepage": "https://github.com/cbuntingde/ralph-wiggum-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/cbuntingde/ralph-wiggum-mcp/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4"
   },

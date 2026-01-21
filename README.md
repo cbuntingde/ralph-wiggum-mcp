@@ -49,19 +49,42 @@ REST API, TDD, Refactoring, Bug Fixing, Documentation, Performance Optimization,
 
 **Prerequisites:**
 - Node.js ≥18.0.0
-- npm or yarn
+- npx (comes with npm ≥5.2.0)
 - Git (optional, for git integration)
 
-**Setup:**
+### Quick Start (Recommended)
+
+No installation required! Simply use npx:
+
+**MCP Client Configuration:**
+
+Add to your MCP client config (e.g., `claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "ralph-wiggum": {
+      "command": "npx",
+      "args": ["ralph-wiggum-mcp"]
+    }
+  }
+}
+```
+
+That's it! The package will be automatically downloaded and run on first use.
+
+### Local Development Setup
+
+If you want to develop or contribute:
 
 ```bash
+git clone https://github.com/cbuntingde/ralph-wiggum-mcp.git
+cd ralph-wiggum-mcp
 npm install
 npm run build
 ```
 
-**MCP Client Configuration:**
-
-Add to your MCP client config (e.g., `REMOVED_desktop_config.json`):
+Then configure your MCP client to use the local build:
 
 ```json
 {
@@ -429,7 +452,7 @@ Contributions welcome! Report bugs, suggest features, submit pull requests, impr
 
 - [Original Technique](https://ghuntley.com/ralph/) – Geoffrey Huntley
 - [Ralph Orchestrator](https://github.com/mikeyobrien/ralph-orchestrator)
-- [REMOVED Code Plugin](https://github.com/anthropics/REMOVED-code/tree/main/plugins/ralph-wiggum) – Anthropic
+- [Claude Code Plugin](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) – Anthropic
 - [Model Context Protocol](https://modelcontextprotocol.io) – Specification
 
 ## License
